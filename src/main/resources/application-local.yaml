@@ -1,4 +1,8 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
 turbine:
   cluster-name-expression: new String('default')
-  #app-config: "hystrix-client-springcloud,hystrix-client2-springcloud"
-  app-config: "hystrix-client2-springcloud"
+  app-config: "hystrix-client-springcloud,hystrix-client2-springcloud"
+  #app-config: "hystrix-client2-springcloud"
